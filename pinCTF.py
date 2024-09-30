@@ -74,6 +74,7 @@ def main():
         pinLocation = args.pinLocation
     if args.pinLibraryLocation:
         libraryLocation = args.pinLibraryLocation
+        libraryLocation = os.path.abspath(libraryLocation)
     if args.count:
         count = int(args.count)
     if args.seedLength:
